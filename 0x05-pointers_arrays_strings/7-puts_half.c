@@ -3,34 +3,24 @@
 /**
  * puts_half - prints half of a string
  * @str: input
- *
- * puts a function put half
- *
  * Return: half the input
  */
-void put_half(char *str)
+void puts_half(char *str)
 {
-	int j = 0;
-	int k;
+	int len = 0;
 
-	while (str[j] != '\0')
+	while (*str != '\0')
 	{
-		j++;
-	}
-
-	if (j % 2 == 1)
-	{
-		k = (j - 1) / 2;
-		k += 1;
-	}
-	else
-	{
-		k = j / 2;
+		len++;
+		str++;
 	}
 
-	for (; k < j; k++)
+	str -= (len / 2);
+	while (*str != '\0')
 	{
-		_putchar(str[k]);
+		_putchar (*str);
+		str++;
 	}
-	_putchar('\n');
+
+	_putchar(*str);
 }
