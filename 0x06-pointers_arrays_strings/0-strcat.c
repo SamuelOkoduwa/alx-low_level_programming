@@ -3,7 +3,7 @@
 /**
  * _strcat - joins two strings
  * @dest: copy to
- * @src: copy from
+ * @src:copy from
  *
  * Return: void
  */
