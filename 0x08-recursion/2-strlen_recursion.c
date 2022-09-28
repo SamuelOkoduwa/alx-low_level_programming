@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - prints a string in reverse
- * @s: string to be printed
+ * _strlen_recursion - calcutes the length of a string
+ * @s: string to be used
  *
- * Return: void
+ * Return: legth of a string
  */
-void _print_rev_recursion(char *s)
+int _strlen_recursion(char *s)
 {
+	int sum = 0;
+
 	if (*s != '\0')
 	{
-		_print_rev_recursion(s + 1);
-		_putchar(*s);
+		sum++;
+		sum += _strlen_recursion(s + 1);
 	}
+	return (sum);
 }
