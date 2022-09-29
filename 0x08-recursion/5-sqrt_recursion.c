@@ -3,8 +3,8 @@
 int real_root(int n, int i);
 
 /**
- * _squr_recursion - returns the sqrt of the number
- * @n: number
+ * _sqrt_recursion - returns the sqrt of the number
+ * @n: nimber
  * Return: sqrt
  */
 int _sqrt_recursion(int n)
@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * real root - finds the natural sqrtr of a num
+ * real_root - finds the natural sqrt of a num
  * @n: input
  * @i: counter
  * Return: sqrt
@@ -26,5 +26,5 @@ int real_root(int n, int i)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	return (real_root(n, n + 1));
+	return (real_root(n, i + 1));
 }
