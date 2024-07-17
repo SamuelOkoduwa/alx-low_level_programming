@@ -1,0 +1,4 @@
+File: 4-O
+
+Time complexity (worst case) of a binary search algorithm in an array of size n: O(log n)
+
